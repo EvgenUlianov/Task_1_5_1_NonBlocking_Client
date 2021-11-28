@@ -55,9 +55,9 @@ public class Main {
                     BasicFunctions.sleep(timeOut);
 
                     int bytesCount = socketChannel.read(inputBuffer);
-                    String result = new String(inputBuffer.array(), 0, bytesCount, StandardCharsets.UTF_8).trim();
-                    System.out.printf("Сервер посчитал %s\n", result);
-                    //System.out.printf("Сервер посчитал %d\n", inputBuffer.getLong());
+                    //String result = new String(inputBuffer.array(), 0, bytesCount, StandardCharsets.UTF_8).trim();
+                    //System.out.printf("Сервер посчитал %s\n", result);
+                    System.out.printf("Сервер посчитал %d\n", inputBuffer.getLong());
                     inputBuffer.clear();
                 }
             }
